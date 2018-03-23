@@ -1,6 +1,7 @@
 {% extends 'mod1/base2.html' %}
-
 {% block body %}
+
+<div class="row">
 
  <!-- Carousel
     ================================================== -->
@@ -26,9 +27,7 @@
             <img src="https://s3.ap-south-1.amazonaws.com/xray-frontend/oracle.jpg" alt="Second slide" width=100%>
             <div class="container">
               <div class="carousel-caption capcolor">
-                <h1>About ORACLE</h1>
-                <p>Learn more about ORACLE by clicking the learn more button.</p>
-                <p><a class="btn btn-lg btn-primary" href="{% url 'mod1:oracle' %}" role="button">Learn more</a></p>
+               <p><a class="btn btn-lg btn-primary" href="{% url 'mod1:oracle' %}" role="button">Learn more</a></p>
               </div>
            </div>
           </div>
@@ -36,8 +35,6 @@
             <img src="https://s3.ap-south-1.amazonaws.com/xray-frontend/mysql.jpg" alt="Third slide" width=100%>
             <div class="container">
               <div class="carousel-caption capcolor">
-                <h1>About MySQL</h1>
-                <p>Learn more about MySQL by clicking the learn more button.</p>
                 <p><a class="btn btn-lg btn-primary" href="{% url 'mod1:mysql' %}" role="button">Learn more</a></p>
               </div>
             </div>
@@ -46,18 +43,14 @@
             <img src="https://s3.ap-south-1.amazonaws.com/xray-frontend/maria.jpg" alt="Fourth slide" width=100%>
             <div class="container">
               <div class="carousel-caption capcolor">
-                <h1>About MariaDb</h1>
-                <p>Learn more about mariadb by clicking the learn more button.</p>
                 <p><a class="btn btn-lg btn-primary" href="{% url 'mod1:mariadb' %}" role="button">Learn more</a></p>
               </div>
             </div>
           </div>  
-          <div class="item" style="padding-top: 120px;"> 
-            <img src="https://s3.ap-south-1.amazonaws.com/xray-frontend/rsz_postgres.jpg" alt="Fifth slide" width=100%>
+          <div class="item" style="margin-top: 150px; margin-bottom: 200px; margin-left: 20px; margin-right: 20px;"> 
+            <img src="https://s3.ap-south-1.amazonaws.com/xray-frontend/pnew.jpg" alt="Fifth slide" width=100%>
             <div class="container">
               <div class="carousel-caption capcolor">
-                <h1>About Postgresql</h1>
-                <p>Learn more about postgresql by clicking the learn more button.</p>
                 <p><a class="btn btn-lg btn-primary" href="{% url 'mod1:postgres' %}" role="button">Learn more</a></p>
               </div>
             </div>
@@ -75,7 +68,7 @@
 
 
    <div class="row" style="padding-right: 20px; margin-top: 10px;">
-        <div class="col-md-6">
+        <div class="col-md-6" style="margin-left: 30px;">
           <div class="embed-responsive embed-responsive-4by3">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/yjH10T3Miag" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
@@ -84,7 +77,7 @@
         <div style="font-size: 20px; text-align: justify; padding-left: 20px;">
          
 
-        <center><h3>RDS</h3></center>
+        <center><h3>RDS</h3></center><p style="padding-left: 20px; padding-right: 20px;">
        Amazon Relational Database Service (or Amazon RDS) is a distributed relational database service by Amazon Web Services (AWS).It is a web service running "in the cloud" designed to simplify the setup, operation, and scaling of a relational database for use in applications.Complex administration processes like patching the database software, backing up databases and enabling point-in-time recovery are managed automatically.Scaling storage and compute resources can be performed by a single API call.<br/>
 
 
@@ -95,13 +88,28 @@
         Amazon RDS is available on several database instance types - optimized for memory, performance or I/O - and provides you with six familiar database engines to choose from, including Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle, and Microsoft SQL Server. You can use the AWS Database Migration Service to easily migrate or replicate your existing databases to Amazon RDS.<br/>
         Amazon RDS was first released on 22 October 2009, supporting MySQL databases. This was followed by support for Oracle Database in June 2011, Microsoft SQL Server in May 2012,PostgreSQL in November 2013,and MariaDB (a fork of MySQL) in October 2015.<br/>
         In November 2014 AWS announced Amazon Aurora, a MySQL-compatible database offering enhanced high availability and performance.
-
+        </p>
          </div>
         </div>
     </div>
 
+    <div class="row" id="SupButton">
+          <div class="col-md-6">
+         <a style="margin-left: 320px;" class="btn btn-lg btn-primary" href="mariadb.html" role="button">Link</a></div>
+         <div class="col-md-6">
+         <a class="btn btn-lg btn-primary" href="{% url 'mod1:rdssup' %}" role="button">Common Support Issues</a></div>
+        </div>
+    
 
-  <div style="padding-left: 10px; padding-right: 10px;">
+    <div class="row">
+      <div class="col-md-4"><div style="padding-left: 150px; margin-top: 100px;"><a href="{% url 'mod1:aurora' %}"><img src="https://s3.ap-south-1.amazonaws.com/xray-frontend/Aurora.jpg" href="google.com"></a></div></div>
+      <div class="col-md-4"><div style="margin-bottom: 100px;"><a href="{% url 'mod1:redshift' %}"><img src="https://s3.ap-south-1.amazonaws.com/xray-frontend/redshift.jpg"></a></div></div>
+      <div class="col-md-4"><div style="padding-left: 100px; margin-top: 100px;"><a href="{% url 'mod1:sqlserver' %}"><img src="https://s3.ap-south-1.amazonaws.com/xray-frontend/sqlServer.jpg"></a></div></div>
+    </div>
+
+    
+
+  <div id="about1" style="padding-left: 20px; padding-right: 10px;">
   <center>  <h2>About us:</h2></center><p style="font-size: 20px; text-align: justify;">The RDS mission is to provide you with environmentally-friendly digital printing solutions that help you reduce costs and improve business efficiency.
 
 Our expertise in digital document and printing solutions is a result of the many years of experience in the industry. With our remote diagnostic center, proactive maintenance program, and highly skilled technicians, our goal is to minimize your worry and maximize your productivity. Learn more about our products and services
@@ -110,5 +118,6 @@ With over 4,000 units in stock, RDS is South Florida’s premier source for Mult
       
     </p>
   </div>
+
  
   {% endblock %}

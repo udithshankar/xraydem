@@ -1,9 +1,9 @@
 {% extends 'mod1/base3.html' %}
 {% block body %}
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/DCaA1-EcTMk"></iframe>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/DCaA1-EcTMk"></iframe>
           </div>
          </div>
-        <div style="font-size: 20px; text-align: justify;">
+        <div style="font-size: 20px; text-align: justify; padding-left: 35px; padding-right: 25px;">
             MySQL (officially pronounced as /maɪ ˌɛskjuːˈɛl/ "My S-Q-L") is an open-source relational database management system (RDBMS).Its name is a combination of "My", the name of co-founder Michael Widenius's daughter, and "SQL", the abbreviation for Structured Query Language. The MySQL development project has made its source code available under the terms of the GNU General Public License, as well as under a variety of proprietary agreements. MySQL was owned and sponsored by a single for-profit firm, the Swedish company MySQL AB, now owned by Oracle Corporation.For proprietary use, several paid editions are available, and offer additional functionality.<BR>
             MySQL is a central component of the LAMP open-source web application software stack (and other "AMP" stacks). LAMP is an acronym for "Linux, Apache, MySQL, Perl/PHP/Python". Applications that use the MySQL database include: TYPO3, MODx, Joomla, WordPress, Simple Machines Forum, phpBB, MyBB, and Drupal. MySQL is also used in many high-profile, large-scale websites, including Google(though not for searches), Facebook, Twitter, Flickr, and YouTube.<BR>
             MySQL was created by a Swedish company, MySQL AB, founded by David Axmark, Allan Larsson and Michael "Monty" Widenius. Original development of MySQL by Widenius and Axmark began in 1994. The first version of MySQL appeared on 23 May 1995. It was initially created for personal usage from mSQL based on the low-level language ISAM, which the creators considered too slow and inflexible. They created a new SQL interface, while keeping the same API as mSQL. By keeping the API consistent with the mSQL system, many developers were able to use MySQL instead of the (proprietarily licensed) mSQL antecedent.[citation needed][dubious – discuss]<br>
@@ -46,7 +46,7 @@
     <li>The general availability of MySQL 5.7 was announced in October 2015.</li>
    <li>MySQL Server 8.0.0-dmr (Milestone Release) was announced 12 September 2016.</li>
       {% block support %}
-      "{% url 'mod1:mysqllambda' %}"
+      "{% url 'mod1:mysqlsup' %}"
       {% endblock %}
     </li>
    </div>

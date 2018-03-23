@@ -18,27 +18,31 @@
   </head>
   <body>
     <!--Navbar start-->
-    <nav class="navbar navbar-default navbar-fixed-top" style="height: 67px;">
+     <nav class="navbar navbar-default navbar-fixed-top" style="height: 67px;">
       <div class="container">
        <div id="navbar" class="collapse navbar-collapse">
-          <a class="navbar-brand" href="#"><h2>RDS Helpdesk</h2></a>
+          <a class="navbar-brand"><h2 style="color: deepskyblue;">RDS Helpdesk</h2></a>
           <ul class="nav navbar-nav navbar-right navbar-brand">
-            <li><a href="{% url 'mod1:home' %}">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Myaccount</a></li>
-            <l1><a href="{% url 'mod1:index' %}" style="line-height: 50px;"> logout</a></l1>
+            <li><a href="{% url 'mod1:home' %}" style="color: deepskyblue;">Home</a></li>
+            <li><a href="#about1" style="color: deepskyblue;">About</a></li>
+            <li><a href="{% url 'mod1:myaccount' %}" style="color: deepskyblue; padding-right: 25px;">Myaccount</a></li>
+          <l1><a href="{% url 'mod1:index' %}" style="line-height: 50px; color: deepskyblue"> Logout</a></l1>
+           
           </ul>
         </div><!--/.nav-collapse -->
-      </nav>
-        <div class="row" style="margin-top: 60;">
-           <div class="col-md-6" style="margin-top: 60;">
+      </div>
+    </nav>
+        <div class="row" style="padding-top: 100px;">
+           <div class="col-md-6" style="margin-top: 60; margin-left: 30px;">
               <div class="embed-responsive embed-responsive-4by3" >
               {% block body %}
               {% endblock %}
              </div>
-          <div style="margin-top: 50px; margin-bottom: 50px;">
-              <a style="padding-right: 80px; margin-left: 100px; align-content: center;" class="btn btn-lg btn-primary" href="#" role="button"> <h1>Link</h1></a>
-                 <a style="margin-left: 150px;" class="btn btn-lg btn-primary" href= {% block support %} {% endblock %} role="button"> <h1>Common Support issues</h1></a>
+           </div>
+         </div>
+          <div class="row" id="SupButton">
+              <a style=" margin-left: 300px; align-content: center; " class="btn btn-lg btn-primary" href="#" role="button"> Link</a>
+                 <a style="margin-left: 250px;" class="btn btn-lg btn-primary" href= {% block support %} {% endblock %} role="button"> Common Support issues</a>
             </div>
        </div>
       </div>
@@ -51,7 +55,7 @@
                Mobile no: +919906810610,+919797108430</p>
        </div>
        <div class="col-md-6" style="text-align: right; padding-right: 50px; padding-top: 20px;">
-        <a style="padding-right: 10px;" href="#">Why RDS?</a>
+        <a style="padding-right: 20px;" href="#">Why RDS?</a>
         <a href="#">Advantages of Database in cloud</a>
        </div> 
       </footer>

@@ -23,12 +23,13 @@
     <nav class="navbar navbar-default navbar-fixed-top" style="height: 67px;">
       <div class="container">
        <div id="navbar" class="collapse navbar-collapse">
-          <a class="navbar-brand"><h2>RDS Helpdesk</h2></a>
+          <a class="navbar-brand"><h2 style="color: deepskyblue;">RDS Helpdesk</h2></a>
           <ul class="nav navbar-nav navbar-right navbar-brand">
-            <li><a href="{% url 'mod1:home' %}">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Myaccount</a></li>
-            <l1><a href="{% url 'mod1:index' %}" style="line-height: 50px;"> logout</a></l1>
+            <li><a href="{% url 'mod1:home' %}" style="color: deepskyblue;">Home</a></li>
+            <li><a href="#about1" style="color: deepskyblue;">About</a></li>
+            <li><a href="{% url 'mod1:myaccount' %}" style="color: deepskyblue; padding-right: 25px;">Myaccount</a></li>
+          <l1><a href="{% url 'mod1:index' %}" style="line-height: 50px; color: deepskyblue"> Logout</a></l1>
+           
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -38,13 +39,13 @@
     {% endblock %}
 
  <div class="f1">
-      <footer class="site-footer row" style="color:blue; background: black; padding-left: 10px;">
+      <footer class="site-footer row" style="color:blue; background: black; padding-left: 20px;">
        <div class="col-md-6"> <h3>Contact us<br></h3>
           <p>  Email: abc@amazon.com<br>
                Mobile no: +919906810610,+919797108430</p>
        </div>
        <div class="col-md-6" style="text-align: right; padding-right: 50px; padding-top: 20px;">
-        <a style="padding-right: 10px;" href="#">Why RDS?</a>
+        <a style="padding-right: 20px;" href="#">Why RDS?</a>
         <a href="#">Advantages of Database in cloud</a>
        </div> 
       </footer>
